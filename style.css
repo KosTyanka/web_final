@@ -1,0 +1,305 @@
+
+
+body.light {
+    background-color: lightyellow;
+    color: black;
+}
+
+.header-section {
+    text-align: center;
+}
+
+.header-section.light {
+    background-color: orange;
+    color: white;
+}
+
+footer.light {
+    background-color: darkgreen;
+    color: white;
+}
+
+.navbar.light {
+    background-color: orange;
+}
+
+.navbar a.light {
+    color: darkgreen;
+}
+
+.navbar a:hover.light {
+    color: darkred;
+}
+
+.navbar.dark {
+    background-color: #1c1c1c;
+}
+
+.navbar a.dark {
+    color: lightgray;
+}
+
+.navbar a:hover.dark {
+    color: lightblue;
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.header-section.dark {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+footer.dark {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.navbar a.dark {
+    color: lightgray;
+}
+
+.navbar a:hover.dark {
+    color: lightblue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content img {
+    max-width: 300px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.main-content figcaption {
+    font-style: italic;
+    color: gray;
+}
+
+.section-heading {
+    font-size: 24px;
+}
+
+.paragraph-text {
+    font-size: 18px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+/* My Cat */
+.my-cat-page {
+    background-color: #FAEBD7;
+}
+
+.my-cat-page .header-section {
+    background-color: #8B0000;
+}
+
+.my-cat-page .header-section h1 {
+    color: #FFFAF0;
+}
+
+.my-cat-page .navbar a {
+    color: #FFD700;
+}
+
+.my-cat-page .navbar a:hover {
+    color: #FFFAF0;
+}
+
+.my-cat-page .main-content {
+    padding: 30px;
+}
+
+.my-cat-page .image-gallery img {
+    max-width: 350px;
+    margin: 15px;
+    border: 3px solid #8B0000;
+}
+
+.my-cat-page .cat-text {
+    font-size: 20px;
+    color: #4B0082;
+}
+
+.my-cat-page .cat-form {
+    background-color: #FAFAD2;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 70%;
+}
+
+.my-cat-page .cat-form h3 {
+    color: #556B2F;
+}
+
+.my-cat-page .cat-form textarea {
+    width: 100%;
+    border: 1px solid #8B0000;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.my-cat-page .cat-form input[type="submit"] {
+    background-color: #556B2F;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.my-cat-page .cat-form input[type="submit"]:hover {
+    background-color: #6B8E23;
+}
+
+.my-cat-page footer {
+    background-color: #556B2F;
+    color: white;
+}
+
+/* FAQ page */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.card {
+    margin: 20px auto; /* Center the card horizontally */
+}
+
+.card.dark {
+    background-color: black;
+    color: white;
+}
+
+.list-group-item.dark {
+    background-color: black;
+    color: white;
+}
+
+body.dark .card {
+    background-color: black;
+    color: white;
+}
+
+body.dark .list-group-item {
+    background-color: black;
+    color: white;
+}
+
+body.light .card {
+    background-color: white;
+    color: black;
+}
+
+body.light .list-group-item {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* test */
+#loginContainer {
+    background-color: #f8f9fa; 
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loginContainer input[type="text"] {
+    width: calc(100% - 22px); 
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginContainer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginContainer button:hover {
+    background-color: #0056b3;
+}
+
+body.dark #loginContainer {
+    background-color: #333; 
+    border: 2px solid #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark #loginContainer input[type="text"] {
+    background-color: #444;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark #loginContainer button {
+    background-color: #28a745;
+    color: white;
+}
+
+body.dark #loginContainer button:hover {
+    background-color: #218838;
+}

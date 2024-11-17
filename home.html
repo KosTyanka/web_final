@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitties</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="header-section">
+        <h1>Kitties here</h1>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange;">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-white" href="#" style="visibility: hidden;">test</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: -50px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html" style="color: darkgreen;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pictures.html" style="color: darkgreen;">Cat Breeds</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html" style="color: darkgreen;">My Cat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="FAQ.html" style="color: darkgreen;">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content container">
+        <section class="mb-5">
+            <h2 class="section-heading">Hello, this site shows my knowledge both about HTML and cats</h2>
+            <p class="paragraph-text">Welcome to my site, I hope these cats will bring you joy</p>
+        </section>
+
+        <div class="card mx-auto" style="max-width: 20rem;">
+            <img src="MyCat.jpg" class="card-img-top" alt="My Cat">
+            <div class="card-body">
+                <h5 class="card-title">This is my cat</h5>
+                <p class="card-text">Her name is "Koshka".</p>
+            </div>
+            <div class="card-footer">
+                <blockquote class="blockquote mb-0">
+                    <p>"Understandable name for a cat" – Everyone, probably</p>
+                </blockquote>
+            </div>
+        </div>
+
+        <ul class="list-group mt-4">
+            <li class="list-group-item">I love my cat</li>
+            <li class="list-group-item">I just love cats</li>
+            <li class="list-group-item">Also I know something about HTML</li>
+        </ul>
+        <div id="loginContainer">
+            <input type="text" id="username" placeholder="Enter your username">
+            <button onclick="login()">Login</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <p id="loginStatus"></p>
+    </main>
+
+    <footer class="footer mt-auto py-3" style="background-color: darkgreen;">
+        <div class="container">
+            <p class="text-white">All questions: <a href="https://t.me/Kos_Tyanka" class="text-warning">Zhaslan Aubakirov</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
