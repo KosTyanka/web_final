@@ -13,28 +13,36 @@
 <body>
     <header class="header-section">
         <h1>Kitties here</h1>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange;">
+        <nav class="navbar navbar-expand-lg my-cat-navbar text-center light">
             <div class="container-fluid d-flex justify-content-between align-items-center">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="true">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand text-white" href="#" style="visibility: hidden;">test</a>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: -50px;">
-                    <ul class="navbar-nav">
+                
+                <!-- Hidden brand for spacing -->
+                <a class="navbar-brand light" href="#" style="visibility: hidden;">test</a>
+            
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html" style="color: darkgreen;">Home</a>
+                            <a class="nav-link light" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pictures.html" style="color: darkgreen;">Cat Breeds</a>
+                            <a class="nav-link light" href="pictures.html">Cat Breeds</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="gallery.html" style="color: darkgreen;">My Cat</a>
+                            <a class="nav-link light" href="gallery.html">My Cat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="FAQ.html" style="color: darkgreen;">FAQ</a>
+                            <a class="nav-link light" href="FAQ.html">FAQ</a>
+                        </li>
+                        <!-- Authentication Links -->
+                        <li class="nav-item active" id="navProfile">
+                            <a class="nav-link light" href="profile.html">Profile</a>
                         </li>
                     </ul>
                 </div>
+            
                 <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
             </div>
         </nav>
@@ -64,12 +72,6 @@
             <li class="list-group-item">I just love cats</li>
             <li class="list-group-item">Also I know something about HTML</li>
         </ul>
-        <div id="loginContainer">
-            <input type="text" id="username" placeholder="Enter your username">
-            <button onclick="login()">Login</button>
-            <button onclick="logout()">Logout</button>
-        </div>
-        <p id="loginStatus"></p>
     </main>
 
     <footer class="footer mt-auto py-3" style="background-color: darkgreen;">
